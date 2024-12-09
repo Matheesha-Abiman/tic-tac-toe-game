@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gameUiAnchorPane" prefHeight="710.0" prefWidth="864.0" style="-fx-background-color: #1E1209;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.controller.BoardController">
+   <children>
+      <Pane fx:id="gameUiPane" prefHeight="618.0" prefWidth="864.0" style="-fx-background-color: #1E1209;">
+         <children>
+            <GridPane fx:id="boardGridPane" gridLinesVisible="true" layoutX="17.0" layoutY="76.0" prefHeight="534.0" prefWidth="517.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="button0_0" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_0" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2_0" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="2">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button0_1" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_1" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2_1" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button0_2" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.rowIndex="2">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1_2" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2_2" alignment="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#makeMove" prefHeight="170.0" prefWidth="167.0" style="-fx-background-color: #B3734C;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Papyrus" size="58.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="14.0" prefHeight="49.0" prefWidth="500.0" text="Tic Tac Toe" textFill="#f8aa01">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="544.0" layoutY="81.0" prefHeight="526.0" prefWidth="306.0" style="-fx-background-color: #B3734C;">
+               <children>
+                  <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="502.0" prefWidth="280.0" style="-fx-background-color: #1E1209;">
+                     <children>
+                        <Label fx:id="userScoreLabel" layoutX="11.0" layoutY="30.0" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #B3734C;">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="aiScoreLabel" layoutX="12.0" layoutY="105.0" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #B3734C;">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="howWinLabel" layoutX="12.0" layoutY="177.0" prefHeight="110.0" prefWidth="256.0" style="-fx-background-color: #B3734C;">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Button fx:id="exitButton" layoutX="705.0" layoutY="634.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="151.0" style="-fx-background-radius: 30; -fx-background-color: #B3734C;" text="Exit" textFill="#1e1209">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="replayButton1" layoutX="548.0" layoutY="634.0" mnemonicParsing="false" onAction="#replay" prefHeight="45.0" prefWidth="151.0" style="-fx-background-radius: 30; -fx-background-color: #B3734C;" text="Replay" textFill="#1e1209">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

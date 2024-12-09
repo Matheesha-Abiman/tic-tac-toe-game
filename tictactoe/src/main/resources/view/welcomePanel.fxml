@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.controller.WelcomePanelController">
+   <children>
+      <Pane fx:id="gamePane" prefHeight="721.0" prefWidth="864.0" style="-fx-background-color: #1E1209;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="20.0" prefHeight="79.0" prefWidth="846.0" text="Welcome To Tic-Tac-Toe" textFill="#fccf07">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+               <effect>
+                  <DropShadow radius="4.75" width="0.0" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="177.0" layoutY="532.0" prefHeight="49.0" prefWidth="547.0" text="Enter Your Name" textFill="#fccf07">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="nameText" alignment="CENTER" layoutX="264.0" layoutY="581.0" prefHeight="38.0" prefWidth="374.0" style="-fx-background-radius: 30; -fx-background-color: #D29468;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="playButton" layoutX="613.0" layoutY="649.0" mnemonicParsing="false" onAction="#play" prefHeight="46.0" prefWidth="216.0" style="-fx-background-radius: 30; -fx-background-color: #D29468;" text="Play" textFill="#3d2412">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="467.0" fitWidth="633.0" layoutX="134.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/w3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
